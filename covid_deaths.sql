@@ -72,6 +72,7 @@ WITH PopvsVac AS
 SELECT *, (rolling_people_vaccinated/population)*100
 FROM PopvsVac
 
+  -- Create View
 CREATE OR REPLACE VIEW `glassy-clock-429511-q6.portfolio_project.PercentPopulationVaccinated` AS 
 WITH PopvsVac AS 
 (
